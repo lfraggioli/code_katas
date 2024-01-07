@@ -1,4 +1,4 @@
-export function bmi(weight: number, height: number): string {
+function bmi(weight: number, height: number): string {
   let calc: number = weight / (height * height);
 
   if (calc <= 18.5) {
@@ -11,3 +11,5 @@ export function bmi(weight: number, height: number): string {
     return "Obese";
   }
 }
+
+console.log(bmi(65, 1.63));
